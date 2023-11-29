@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+        <header>
+          <h1 id="title">Web Development Survey</h1>
+          <p id="description">Thank you for taking the time to participate in this survey!</p>
+        </header>
+
+        <form id="survey-form" class="form-group">
+
+            <div class="group">
+              <label for="name">Name</label>
+              <input class="block" type="text" required placeholder="Enter your name" id="name" autocomplete="given-name"/>
+              
+              <label for="email">Email</label>
+              <input class="block" placeholder="Enter your email" id="email" type="email" name="email" autocomplete="email"/>
+              
+              <label for="number">Age</label>
+              <input class="block" placeholder="Age" type="number" name="age" id="number" min="13" max="120"/>
+            </div>
+            
+            <div class="group">
+              <p>Which web development career are you interested in?</p>
+              <select id="career-dropdown" name="career" required class="block">
+                <option value="select">Select one</option>
+                <option value="full-stack">Full Stack</option>
+                <option value="front-end">Front End</option>
+                <option value="back-end">Back End</option>
+              </select>
+            </div>
+            
+            <div class="group">
+              <p>Which best describes your current role?</p>
+              <label for="student"><input id="student" checked value="student" name="role" type="radio"/>Student</label>
+              <label for="learner"><input id="learner"  value="learner"  name="role"  type="radio"/>Learner</label>
+              <label for="job"><input id="job" value="job"  name="role"  type="radio"/>Job</label>
+              <label for="other"><input id="other" value="other"  name="role"  type="radio"/>Other</label>
+            </div>
+            
+            <div class="group">
+              <p>Which learning route are you taking?</p>
+              <select required id="learning-route-dropdown" name="source" class="block">
+                <option value="select">Select one</option>
+                <option value="bootcamp">Bootcamp</option>
+                <option value="university">University</option>
+                <option value="open-source">Open Source</option>
+              </select>
+            </div>
+            
+            <div class="group">
+              <p>What resources are you using?<span> (Check all that apply)</span></p>
+              <label for="freecodecamp">FreeCodeCamp <input id="freecodecamp" name="learning" type="checkbox" value=freecodecamp/></label>
+              <label for="theodinproject">TheOdinProject <input id="theodinproject"  name="learning" value="theodinproject" type="checkbox" /></label>
+              <label for="udemy">Udemy <input id="udemy" name="learning" type="checkbox" value="udemy"/></label>
+              <label for="youtube">YouTube <input id="youtube" name="learning" type="checkbox" value="youtube"/></label>
+              <label for="coursera">Coursera <input id="coursera" name="learning" type="checkbox" value="coursera"/></label>
+              <label for="codeacademy">CodeAcademy <input id="codeacademy" name="learning" type="checkbox" value="codeacademy"/></label>
+              <label for="edx">edX <input id="edx"  name="learning" type="checkbox" value="edx"/></label>
+              <label for="interactive-coding-websites">Interactive Coding Websites <input id="interactive-coding-websites"  name="learning" type="checkbox" value="interactive-coding-websites"/></label>
+              <label for="guides-or-books">Guides or Books <input id="guides-or-books"  name="learning" type="checkbox" value="guides-or-books"/></label>
+              <label for="coding-communities">Coding Communities <input id="coding-communities" name="learning" type="checkbox" value="codingcommunities"/></label>
+            </div>
+
+            <div class="group">
+              <p>Any tips for those just beginning to study web development?</p>
+              <textarea class="block" placeholder="Enter your comment here..." id="comments" name="comments"></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
