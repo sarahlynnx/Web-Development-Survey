@@ -1,0 +1,78 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-image: url(https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.form-group {
+  max-width: 60%;
+  background-color: rgba(120,0,230, 0.9);
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  padding: 8px 0px 2px 0px;
+  font-size: 18px;
+}
+
+.form-group p {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+#title {
+  padding-top: 15px;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-size: 18px;
+}
+
+textarea { 
+  line-height: 20px;
+  min-height: 5em;
+  resize: none;
+}
+
+.block {
+  display: block;
+  width: calc(100% - 2px);
+  border: 1px solid blue;
+  height: 1.75rem;
+  border-radius: 5px;
+  padding: 0 0 0 2px;
+}
+
+label {
+  display: block;
+}
+
+button {
+  color: white;
+  background-color: rgba(0,0,255,0.6);
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    max-width: 80%;
+  }
+}
